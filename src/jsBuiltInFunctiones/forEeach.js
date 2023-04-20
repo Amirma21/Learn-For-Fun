@@ -9,6 +9,14 @@ function forEach(array, callBackFn) {
 }
 
 
+
+
+
+forEach(numbers , (num , index)=>{
+    console.log(`number in index ${index} is ${num}`)
+})
+
+
 /// outPut :
 // number in index 0 is 1
 // number in index 1 is 3
@@ -16,11 +24,6 @@ function forEach(array, callBackFn) {
 // number in index 3 is 7
 // number in index 4 is 8
 // number in index 5 is 9
-
-
-forEach(numbers , (num , index)=>{
-    console.log(`number in index ${index} is ${num}`)
-})
 
 
 
