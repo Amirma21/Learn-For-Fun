@@ -9,10 +9,7 @@ function forEach(array, callBackFn) {
 }
 
 
-
-
-
-forEach(numbers , (num , index)=>{
+forEach(numbers, (num, index) => {
     console.log(`number in index ${index} is ${num}`)
 })
 
@@ -26,7 +23,15 @@ forEach(numbers , (num , index)=>{
 // number in index 5 is 9
 
 
-
 // numbers.forEach((value , index)=>{
 //     console.log(index)
 // })
+
+
+/// using other arguments of our ForEach method.
+
+const newNumberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+forEach(newNumberList, function (item, index, array) {
+    array[index] = item + 1
+})
